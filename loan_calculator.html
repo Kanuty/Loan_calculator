@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loan_calculator</title>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+ 	<link rel="stylesheet" href="css/loan_calculator.css">
+</head>
+<body class="grey darken-4">
+
+	<div class="container">
+		 <div class="row">
+		      <div class="col s12 deep-purple lighten-1  calculator_main_field z-depth-4">
+		      	 
+
+			      	 <div class="card-content  white-text" id="card">
+					   
+					        	
+
+			        	<form id="loan-form" class="center-align deep-purple darken-1 z-depth-3">
+			        		<h2 class="card-title center-align " id="header"><u>Loan Calculator</u></h2>
+			        		<h5>Interest rate %</h5>
+			        		<div class="range-field">
+						      <input type="range"  id="percentage" min="1" max="100" />
+						    </div>
+						    
+
+						  	 <h5>Value of a loan €</h5>
+						    <input placeholder="Input a value of loan" id="loan_value" type="number" class="validate deep-purple lighten-4 center-align">
+							<h5>Years</h5>
+						    <input placeholder="Amount of years" id="loan_years" type="number" class="validate deep-purple lighten-4 center-align">
+								
+		   					<button class="btn waves-effect waves-light amber darken-2" type="submit" name="action">Calculate
+						    	<!-- <i class="material-icons right">send</i> -->
+							</button>
+							<br>
+							<div>
+								<label for="loan_result_small">Monthly Payment</label>
+								<input disabled placeholder="Monthly Payment " id="loan_result_small" type="number" class="validate  center-align amber-text"> 
+								<label for="loan_interest_small">Total Interest</label>
+								<input disabled placeholder="Total Interest" id="loan_interest_small" type="number" class="validate  center-align amber-text"> 
+								<label for="loan_payment_small">Total Payment</label>
+								<input disabled placeholder="Total Payment" id="loan_payment_small" type="number" class="validate  center-align amber-text">
+							</div>
+			        	</form>
+					 </div>
+<!-- 
+
+					 <div class="card-content  white-text">
+					 	<h3 class="card-title center-align ">Result</h3>
+					        	
+			        	<form id="loan-result" class="center-align deep-purple darken-1 z-depth-3">
+						 <input placeholder="result" id="loan_result" type="number" class="validate deep-purple lighten-4 center-align">
+				
+			        	</form> -->
+					 </div>
+
+		     </div>  
+
+   		 </div>
+
+	</div>
+	
+	<script src="js/loan_calculator.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 	<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>

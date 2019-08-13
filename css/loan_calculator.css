@@ -1,0 +1,98 @@
+body{
+	text-shadow: 1px 1px 2px #111;
+}
+.calculator_main_field{
+	margin: 5rem;
+	
+	min-height: 30rem;
+	display: flex;
+  	/*align-items: center;*/
+  	justify-content: center;
+  	border-radius:1%;
+}
+#loan-form, #loan-result {
+	margin: 0.5rem;
+	padding: 1rem;
+	min-height: 28rem;
+}
+
+.btn{
+	margin:1rem;
+/*	min-width: 20rem;*/
+}
+input[type=range] {
+    border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px #111;
+ /*background: -webkit-linear-gradient(left, #00ff6f 0%, #f7ff05 13%, #ff0303 51%, #990000 82%, #990000 100%) !important;*/
+	background: rgba(50,50,50,0.9) !important;
+
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 3px #333;
+  border: 1px 1px 3px solid rgba(248,180,150,0.3);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #ffa000 ;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type=range]+.thumb{
+	background: #ffa000 ;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+  border-bottom: 0 !important:;
+}
+
+label
+{
+color: #fff;
+}
+
+#loan_value, #loan_result, #loan_years, #loan_result_small, #loan_interest_small, #loan_payment_small, #error{
+	
+	background-color: rgba(50,50,50,0.9) !important;
+	border: 0px 0px 0px !important;
+	padding: 0.1rem !important;
+
+}
+#loan_result{
+	min-height: 24rem;
+
+}
+input[placeholder]{
+	color: #ffa000;
+}
+input:disabled+label{
+	color: #fff !important;
+	font-size: 16px !important;
+}
+/*input[disabled]{
+color: grey;
+}*/
+/*#loan_result_small, #loan_interest_small{
+	text-color: #333 !important;
+}
+*/
+
+input[disabled]::placeholder {
+  opacity: 0.3;
+}
+button{
+	text-shadow: 1px 1px 2px #111;
+}
+.alert{
+	font-size: 40px;
+	text-decoration: underline;
+}
